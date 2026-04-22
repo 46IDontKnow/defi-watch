@@ -12,8 +12,7 @@
   --acc:#4f8ef7;--accd:#162040;
   --grn:#1fca95;--grnd:#071e16;
   --red:#f05c5c;--redd:#250c0c;
-  --amb:#e8a020;--pur:#9b7ff5;
-  --t1:#dde5f0;--t2:#5a7090;--t3:#2e4060;
+  --amb:#e8a020;--t1:#dde5f0;--t2:#5a7090;--t3:#2e4060;
 }
 html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--t1);font-family:monospace}
 #app{display:flex;height:100vh;overflow:hidden}
@@ -31,8 +30,7 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--t1);font-
 .ni.on .dot{background:var(--acc);box-shadow:0 0 6px var(--acc)}
 .sb-foot{margin-top:auto;padding:12px;border-top:1px solid var(--brd)}
 .sdot{display:inline-block;width:5px;height:5px;border-radius:50%;margin-right:4px;vertical-align:middle}
-.slive{background:var(--grn);animation:blink 2s infinite}
-.sidle{background:var(--amb)}
+.slive{background:var(--grn);animation:blink 2s infinite}.sidle{background:var(--amb)}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
 .main{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0}
 .tb{height:50px;background:var(--panel);border-bottom:1px solid var(--brd);display:flex;align-items:center;padding:0 20px;gap:8px;flex-shrink:0;overflow-x:auto}
@@ -42,7 +40,7 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--t1);font-
 .cbtn:hover{border-color:var(--brdm);color:var(--t1)}
 .cbtn.on{border-color:var(--acc);color:var(--acc);background:var(--accd)}
 .cdot{width:5px;height:5px;border-radius:50%}
-.ibtn{background:transparent;border:1px solid var(--brd);color:var(--t2);padding:5px 10px;border-radius:6px;cursor:pointer;font-family:monospace;font-size:10px;letter-spacing:1px;transition:all .15s}
+.ibtn{background:transparent;border:1px solid var(--brd);color:var(--t2);padding:5px 10px;border-radius:6px;cursor:pointer;font-family:monospace;font-size:10px;transition:all .15s}
 .ibtn:hover{border-color:var(--acc);color:var(--acc)}
 .ibtn:disabled{opacity:.4;cursor:not-allowed}
 .content{flex:1;overflow-y:auto;padding:20px}
@@ -52,13 +50,11 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--t1);font-
 .sc{background:var(--card);border:1px solid var(--brd);border-radius:10px;padding:16px;position:relative;overflow:hidden}
 .sc::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(79,142,247,.25),transparent)}
 .slabel{font-size:9px;color:var(--t3);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
-.sval{font-size:20px;font-weight:700;letter-spacing:-.5px}
-.ssub{font-size:10px;color:var(--t3);margin-top:4px}
+.sval{font-size:20px;font-weight:700}.ssub{font-size:10px;color:var(--t3);margin-top:4px}
 .cg{color:var(--grn)}.cr{color:var(--red)}.cb{color:var(--acc)}.ca{color:var(--amb)}.cm{color:var(--t2)}
 .sh{display:flex;align-items:center;margin-bottom:10px;gap:10px}
 .st{font-size:11px;font-weight:700;color:var(--t2);letter-spacing:1px;text-transform:uppercase;white-space:nowrap}
-.sl{flex:1;height:1px;background:var(--brd)}
-.se{font-size:10px;color:var(--t3);white-space:nowrap}
+.sl{flex:1;height:1px;background:var(--brd)}.se{font-size:10px;color:var(--t3);white-space:nowrap}
 .tw{background:var(--card);border:1px solid var(--brd);border-radius:10px;overflow:hidden;margin-bottom:18px}
 table{width:100%;border-collapse:collapse}
 thead tr{background:var(--panel)}
@@ -73,15 +69,10 @@ tbody tr:hover{background:var(--hover)}
 .bd{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border-radius:4px;font-size:9px;letter-spacing:1px;text-transform:uppercase;font-weight:600;border:1px solid}
 .bdg{background:var(--grnd);color:var(--grn);border-color:rgba(31,202,149,.2)}
 .bdr{background:var(--redd);color:var(--red);border-color:rgba(240,92,92,.2)}
-.bdb{background:var(--accd);color:var(--acc);border-color:rgba(79,142,247,.2)}
 .bda{background:#1e1500;color:var(--amb);border-color:rgba(232,160,32,.2)}
-.bdm{background:var(--hover);color:var(--t2);border-color:var(--brd)}
 .cb2{display:inline-flex;align-items:center;gap:3px;padding:2px 6px;border-radius:4px;font-size:9px;border:1px solid}
-/* PROTOCOL BADGE */
-.proto{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:4px;font-size:9px;font-weight:600;letter-spacing:1px}
-.proto-aave{background:#1a0a2e;color:#b06bff;border:1px solid rgba(176,107,255,.2)}
-.proto-wallet{background:var(--accd);color:var(--acc);border:1px solid rgba(79,142,247,.2)}
-/* HEALTH BAR */
+.src-aave{background:#1a0a2e;color:#b06bff;border:1px solid rgba(176,107,255,.2);display:inline-flex;align-items:center;padding:2px 6px;border-radius:4px;font-size:9px;font-weight:600}
+.src-wallet{background:var(--accd);color:var(--acc);border:1px solid rgba(79,142,247,.2);display:inline-flex;align-items:center;padding:2px 6px;border-radius:4px;font-size:9px;font-weight:600}
 .hfc{background:var(--card);border:1px solid var(--brd);border-radius:10px;padding:16px;margin-bottom:18px}
 .hft{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:14px}
 .hfn{font-size:32px;font-weight:800;line-height:1}
@@ -89,7 +80,6 @@ tbody tr:hover{background:var(--hover)}
 .hftr{height:6px;background:var(--bg);border-radius:3px;overflow:hidden;margin-bottom:5px}
 .hff{height:100%;border-radius:3px;transition:width .5s;background:linear-gradient(90deg,#f05c5c,#e8a020 40%,#1fca95 80%)}
 .hftk{display:flex;justify-content:space-between;font-size:9px;color:var(--t3)}
-/* PERSON CARDS */
 .pc{background:var(--card);border:1px solid var(--brd);border-radius:10px;padding:16px;cursor:pointer;transition:all .2s;position:relative}
 .pc:hover{border-color:var(--brdg);background:var(--hover);transform:translateY(-1px)}
 .pct{display:flex;align-items:center;gap:10px;margin-bottom:14px}
@@ -101,7 +91,6 @@ tbody tr:hover{background:var(--hover)}
 .piv{font-size:13px;font-weight:700}
 .par{position:absolute;right:14px;bottom:14px;color:var(--t3);font-size:14px;transition:all .2s}
 .pc:hover .par{color:var(--acc);right:10px}
-/* NW BAR */
 .nwb{background:var(--card);border:1px solid var(--brd);border-radius:10px;padding:20px;margin-bottom:18px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
 .nwm{flex:1;min-width:200px}
 .nwl{font-size:9px;color:var(--t3);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px}
@@ -110,20 +99,14 @@ tbody tr:hover{background:var(--hover)}
 .nwsp{display:flex;gap:28px;flex-wrap:wrap}
 .nwsl{font-size:9px;color:var(--t3);letter-spacing:1px;text-transform:uppercase;margin-bottom:3px}
 .nwsv{font-size:18px;font-weight:700}
-/* WALLET CARD */
 .wc{background:var(--card);border:1px solid var(--brd);border-radius:10px;margin-bottom:12px;overflow:hidden}
-.wch{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--panel);border-bottom:1px solid var(--brd);flex-wrap:wrap;gap:8px}
+.wch{display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:var(--panel);border-bottom:1px solid var(--brd);flex-wrap:wrap}
 .wcn{font-size:13px;font-weight:700}.wca{font-size:10px;color:var(--t3);font-family:monospace;margin-top:2px;word-break:break-all}
 .wcs{display:flex;border-bottom:1px solid var(--brd);flex-wrap:wrap}
 .wci{flex:1;min-width:80px;padding:10px 14px;border-right:1px solid var(--brd);text-align:center}
 .wci:last-child{border-right:none}
 .wcil{font-size:9px;color:var(--t3);letter-spacing:1px;text-transform:uppercase;margin-bottom:3px}
 .wciv{font-size:14px;font-weight:700}
-/* SOURCE TAG */
-.src-tag{font-size:9px;padding:1px 6px;border-radius:3px;letter-spacing:1px;font-weight:600}
-.src-aave{background:#1a0a2e;color:#b06bff;border:1px solid rgba(176,107,255,.2)}
-.src-wallet{background:var(--accd);color:var(--acc);border:1px solid rgba(79,142,247,.2)}
-/* SETTINGS */
 .ov{position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:100;display:flex;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto}
 .ob{background:var(--panel);border:1px solid var(--brdm);border-radius:14px;width:580px;padding:28px;margin:auto}
 .ot{font-size:17px;font-weight:800;margin-bottom:4px}
@@ -158,7 +141,6 @@ tbody tr:hover{background:var(--hover)}
 .lt{font-size:11px;color:var(--t3);letter-spacing:1px;text-align:center;line-height:1.8}
 .eb{background:var(--redd);border:1px solid rgba(240,92,92,.3);border-radius:8px;padding:12px 16px;font-size:11px;color:var(--red);margin-bottom:14px;line-height:1.6}
 .ib{background:var(--accd);border:1px solid rgba(79,142,247,.2);border-radius:8px;padding:14px 16px;font-size:12px;color:var(--acc);margin-bottom:14px;line-height:1.8}
-.wb{background:#0a1a0a;border:1px solid rgba(31,202,149,.15);border-radius:8px;padding:12px 16px;font-size:11px;color:var(--grn);margin-bottom:14px;line-height:1.6}
 .ss{flex:1;display:flex;align-items:flex-start;justify-content:center;padding:30px 20px;overflow-y:auto}
 .ssb{background:var(--card);border:1px solid var(--brdm);border-radius:14px;padding:28px;width:580px}
 .ssi{font-size:34px;margin-bottom:12px}
@@ -169,440 +151,94 @@ tbody tr:hover{background:var(--hover)}
 <body>
 <div id="app"></div>
 <script>
-// ── CHAVES ────────────────────────────────────────────────────
-const MORALIS_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImVlMWZmOGZkLTNlMDEtNDhiNy04OTFhLThkMTY2MjQxMDFkYiIsIm9yZ0lkIjoiNTExNzkxIiwidXNlcklkIjoiNTI2NjIxIiwidHlwZUlkIjoiYTM4N2Y1YTQtMTI5Ni00OGRkLTllNGMtMDM4OWEzNzM0ZGMwIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3NzY4Nzg3MjQsImV4cCI6NDkzMjYzODcyNH0.CDSfO1NgH6lrfjAycyCcZlClhns8hu3hyjo-a75Y6Kc';
-const MORALIS_BASE = 'https://deep-index.moralis.io/api/v2.2';
+// O backend Python cuida das APIs — o frontend só chama /api/portfolio
+const CMETA={eth:{n:'ETH',c:'#627EEA'},base:{n:'Base',c:'#0052FF'},matic:{n:'MATIC',c:'#8247E5'},bsc:{n:'BNB',c:'#F0B90B'}};
+const CFILTERS=[{id:'all',l:'Todas'},{id:'eth',l:'Ethereum'},{id:'base',l:'Base'},{id:'matic',l:'Polygon'},{id:'bsc',l:'BNB'}];
+const UCOLORS=[{c:'#9b7ff5',b:'#160e30'},{c:'#1fca95',b:'#071e16'},{c:'#f05c5c',b:'#200808'},{c:'#e8a020',b:'#1a1000'},{c:'#4f8ef7',b:'#0d1e40'},{c:'#f472b6',b:'#2a0a1a'}];
 
-// Aave V3 Subgraph endpoints (gratuito, sem chave)
-const AAVE_ENDPOINTS = {
-  eth:   'https://gateway.thegraph.com/api/deployments/id/QmRCtyCNBQq6NLbGkxGAMFGjHFHGgXBxDQ3v84ZYe28mMV',
-  matic: 'https://gateway.thegraph.com/api/deployments/id/QmTDRBcpVJnPuHNrKGAMeJKfBCbcpZzFpMoNvRBqDFFGQQ',
-  base:  'https://gateway.thegraph.com/api/deployments/id/QmUXDHWEMBuWkHGEJDvSbdvG5Sn4q5muivmBXVHGaHrdFB',
-  bsc:   'https://gateway.thegraph.com/api/deployments/id/QmSCk2yQ1ggHXBYVuVJMVAq5WcGBMgGRGsGUG4rKHFbfKG',
-};
+function lCfg(){try{return JSON.parse(localStorage.getItem('dw7_cfg')||'null')}catch{return null}}
+function sCfg(c){localStorage.setItem('dw7_cfg',JSON.stringify(c))}
+function lCch(){try{return JSON.parse(localStorage.getItem('dw7_cch')||'{}')}catch{return{}}}
+function sCch(d){localStorage.setItem('dw7_cch',JSON.stringify({ts:Date.now(),data:d}))}
 
-// Aave V3 GraphQL query
-const AAVE_QUERY = (addr) => `{
-  user(id:"${addr.toLowerCase()}"){
-    reserves{
-      currentATokenBalance
-      currentVariableDebt
-      currentStableDebt
-      reserve{
-        symbol
-        name
-        decimals
-        price{ priceInEth }
-        liquidityRate
-        variableBorrowRate
-        underlyingAsset
-      }
-    }
-    healthFactor
-    totalCollateralUSD
-    totalBorrowsUSD
-    netWorthUSD
-  }
-}`;
-
-const CHAIN_MAP = {
-  eth:   '0x1',
-  base:  '0x2105',
-  matic: '0x89',
-  bsc:   '0x38',
-};
-const CHAIN_NAMES = {
-  '0x1':'eth','0x2105':'base','0x89':'matic','0x38':'bsc'
-};
-const CMETA = {
-  eth:  {n:'ETH',  c:'#627EEA'},
-  base: {n:'Base', c:'#0052FF'},
-  matic:{n:'MATIC',c:'#8247E5'},
-  bsc:  {n:'BNB',  c:'#F0B90B'},
-};
-const NATIVE_SYMBOLS = {
-  eth:'ETH', base:'ETH', matic:'MATIC', bsc:'BNB'
-};
-const CFILTERS = [
-  {id:'all',l:'Todas'},
-  {id:'eth',l:'Ethereum'},
-  {id:'base',l:'Base'},
-  {id:'matic',l:'Polygon'},
-  {id:'bsc',l:'BNB'},
-];
-const UCOLORS = [
-  {c:'#9b7ff5',b:'#160e30'},
-  {c:'#1fca95',b:'#071e16'},
-  {c:'#f05c5c',b:'#200808'},
-  {c:'#e8a020',b:'#1a1000'},
-  {c:'#4f8ef7',b:'#0d1e40'},
-  {c:'#f472b6',b:'#2a0a1a'},
-];
-
-// ── STORAGE ───────────────────────────────────────────────────
-function lCfg(){try{return JSON.parse(localStorage.getItem('dw5_cfg')||'null')}catch{return null}}
-function sCfg(c){localStorage.setItem('dw5_cfg',JSON.stringify(c))}
-function lCch(){try{return JSON.parse(localStorage.getItem('dw5_cch')||'{}')}catch{return{}}}
-function sCch(d){localStorage.setItem('dw5_cch',JSON.stringify({ts:Date.now(),data:d}))}
-
-// ── ETH PRICE ─────────────────────────────────────────────────
-let ETH_PRICE = 0;
-async function getEthPrice(){
-  try {
-    const r = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum,matic-network,binancecoin&vs_currencies=usd');
-    const d = await r.json();
-    return {
-      eth:   d.ethereum?.usd || 3500,
-      matic: d['matic-network']?.usd || 0.8,
-      bsc:   d.binancecoin?.usd || 600,
-    };
-  } catch { return {eth:3500, matic:0.8, bsc:600}; }
+async function fetchWalletFromBackend(address, label){
+  const r = await fetch(`/api/portfolio?address=${encodeURIComponent(address)}&label=${encodeURIComponent(label)}`);
+  if(!r.ok) throw new Error('Backend erro '+r.status);
+  const d = await r.json();
+  if(d.error) throw new Error(d.error);
+  return d;
 }
 
-// ── MORALIS API ───────────────────────────────────────────────
-async function mGet(path){
-  const r = await fetch(MORALIS_BASE+path,{headers:{'X-API-Key':MORALIS_KEY,'accept':'application/json'}});
-  if(!r.ok) throw new Error('Moralis '+r.status);
-  return r.json();
-}
-
-async function getWalletTokens(address, chainId, nativePrices){
-  const chainName = CHAIN_NAMES[chainId] || 'eth';
-  const tokens = [];
-  try {
-    // Saldo nativo
-    const native = await mGet(`/${address}/balance?chain=${chainId}`);
-    const nativeBal = parseFloat(native.balance||'0') / 1e18;
-    const nativePrice = chainName==='matic' ? nativePrices.matic : chainName==='bsc' ? nativePrices.bsc : nativePrices.eth;
-    if(nativeBal > 0.0001){
-      tokens.push({
-        symbol: NATIVE_SYMBOLS[chainName]||'ETH',
-        name: chainName==='matic'?'Polygon':chainName==='bsc'?'BNB Chain':'Ethereum',
-        balance: nativeBal,
-        usd: nativeBal * nativePrice,
-        chain: chainName,
-        logo: null,
-        source: 'wallet',
-      });
-    }
-    // ERC20
-    const erc20 = await mGet(`/${address}/erc20?chain=${chainId}&limit=50`);
-    for(const t of (erc20.result||[])){
-      const dec = parseInt(t.decimals)||18;
-      const bal = parseFloat(t.balance||'0') / Math.pow(10,dec);
-      if(bal < 0.000001) continue;
-      try {
-        const pd = await mGet(`/erc20/${t.token_address}/price?chain=${chainId}`);
-        const usd = bal * (pd.usdPrice||0);
-        if(usd < 0.5) continue;
-        tokens.push({
-          symbol: t.symbol, name: t.name, balance: bal, usd,
-          chain: chainName, logo: t.thumbnail||t.logo||null, source: 'wallet',
-        });
-      } catch{}
-    }
-  } catch(e){ console.warn('Moralis chain error', chainId, e.message); }
-  return tokens.sort((a,b)=>b.usd-a.usd);
-}
-
-// ── AAVE API ──────────────────────────────────────────────────
-async function getAavePositions(address, chain){
-  const endpoint = AAVE_ENDPOINTS[chain];
-  if(!endpoint) return {supplies:[], borrows:[], healthFactor:99, totalSupplyUSD:0, totalBorrowUSD:0};
-
-  try {
-    const r = await fetch(endpoint, {
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({query: AAVE_QUERY(address)})
-    });
-    const d = await r.json();
-    const user = d?.data?.user;
-    if(!user) return {supplies:[], borrows:[], healthFactor:99, totalSupplyUSD:0, totalBorrowUSD:0};
-
-    const supplies  = [];
-    const borrows   = [];
-    const nativePrices = await getEthPrice();
-    const ethPrice = nativePrices.eth;
-
-    for(const res of (user.reserves||[])){
-      const dec = parseInt(res.reserve.decimals)||18;
-      const priceInEth = parseFloat(res.reserve.price?.priceInEth||'0') / 1e18;
-      const priceUSD   = priceInEth * ethPrice;
-
-      const supplyBal = parseFloat(res.currentATokenBalance||'0') / Math.pow(10,dec);
-      const varDebt   = parseFloat(res.currentVariableDebt||'0') / Math.pow(10,dec);
-      const stbDebt   = parseFloat(res.currentStableDebt||'0') / Math.pow(10,dec);
-      const totalDebt = varDebt + stbDebt;
-
-      if(supplyBal > 0.000001){
-        const usd = supplyBal * priceUSD;
-        if(usd > 0.1) supplies.push({
-          symbol:  res.reserve.symbol,
-          name:    res.reserve.name,
-          balance: supplyBal,
-          usd,
-          chain,
-          logo: null,
-          source: 'aave',
-          apy: (parseFloat(res.reserve.liquidityRate||'0') / 1e27) * 100,
-        });
-      }
-      if(totalDebt > 0.000001){
-        const usd = totalDebt * priceUSD;
-        if(usd > 0.1) borrows.push({
-          symbol:  res.reserve.symbol,
-          name:    res.reserve.name,
-          balance: totalDebt,
-          usd,
-          chain,
-          logo: null,
-          source: 'aave',
-          protocol: 'Aave V3',
-          apy: (parseFloat(res.reserve.variableBorrowRate||'0') / 1e27) * 100,
-        });
-      }
-    }
-
-    const hfRaw = parseFloat(user.healthFactor||'0') / 1e18;
-    const healthFactor = hfRaw > 1000 ? 99 : +hfRaw.toFixed(2);
-
-    return {
-      supplies,
-      borrows,
-      healthFactor,
-      totalSupplyUSD:  supplies.reduce((s,a)=>s+a.usd,0),
-      totalBorrowUSD:  borrows.reduce((s,a)=>s+a.usd,0),
-    };
-  } catch(e){
-    console.warn('Aave error', chain, e.message);
-    return {supplies:[], borrows:[], healthFactor:99, totalSupplyUSD:0, totalBorrowUSD:0};
-  }
-}
-
-// ── FETCH WALLET COMPLETO ─────────────────────────────────────
-async function fetchWalletFull(walletCfg, nativePrices){
-  const addr = walletCfg.address;
-  const label = walletCfg.label;
-
-  // Roda tudo em paralelo por chain
-  const chains = Object.keys(CHAIN_MAP);
-  const [tokenResults, aaveResults] = await Promise.all([
-    Promise.allSettled(chains.map(c => getWalletTokens(addr, CHAIN_MAP[c], nativePrices))),
-    Promise.allSettled(chains.map(c => getAavePositions(addr, c))),
-  ]);
-
-  const walletTokens = tokenResults.flatMap((r,i)=>
-    r.status==='fulfilled' ? r.value.map(t=>({...t, wLabel:label})) : []
-  );
-  const aaveSupplies = aaveResults.flatMap((r,i)=>
-    r.status==='fulfilled' ? r.value.supplies.map(t=>({...t, wLabel:label})) : []
-  );
-  const aaveBorrows = aaveResults.flatMap((r,i)=>
-    r.status==='fulfilled' ? r.value.borrows.map(t=>({...t, wLabel:label})) : []
-  );
-
-  // Health factor: pega o menor (mais arriscado) dentre as chains com dívida
-  const hfs = aaveResults
-    .filter(r=>r.status==='fulfilled' && r.value.borrows.length>0)
-    .map(r=>r.value.healthFactor);
-  const healthFactor = hfs.length > 0 ? Math.min(...hfs) : 99;
-
-  const allAssets = [...walletTokens, ...aaveSupplies].sort((a,b)=>b.usd-a.usd);
-  const allLiab   = [...aaveBorrows].sort((a,b)=>b.usd-a.usd);
-
-  return {
-    label, address: addr,
-    assets: allAssets,
-    liabilities: allLiab,
-    healthFactor,
-    error: null,
-  };
-}
-
-// ── FETCH USER ────────────────────────────────────────────────
 async function fetchUserFull(user){
-  const nativePrices = await getEthPrice();
-  const results = await Promise.allSettled(
-    user.wallets.map(w => fetchWalletFull(w, nativePrices))
+  const results = await Promise.allSettled(user.wallets.map(w=>fetchWalletFromBackend(w.address, w.label)));
+  const walletData = results.map((r,i)=>
+    r.status==='fulfilled'?r.value:{...user.wallets[i],assets:[],liabilities:[],healthFactor:99,error:r.reason?.message||'Erro'}
   );
-  const walletData = results.map((r,i) =>
-    r.status==='fulfilled'
-      ? r.value
-      : {...user.wallets[i], assets:[], liabilities:[], healthFactor:99, error: r.reason?.message||'Erro'}
-  );
-
-  const allAssets = walletData.flatMap(w => w.assets);
-  const allLiab   = walletData.flatMap(w => w.liabilities);
-  const tA = allAssets.reduce((s,a)=>s+a.usd,0);
-  const tL = allLiab.reduce((s,a)=>s+a.usd,0);
-
-  // HF global = menor entre as carteiras com dívida
-  const hfs = walletData.filter(w=>w.liabilities.length>0).map(w=>w.healthFactor);
-  const hf  = hfs.length>0 ? Math.min(...hfs) : 99;
-
-  return { walletData, allAssets, allLiab, tA, tL, net:tA-tL, hf };
+  const allAssets = walletData.flatMap(w=>(w.assets||[]).map(a=>({...a,wLabel:w.label})));
+  const allLiab   = walletData.flatMap(w=>(w.liabilities||[]).map(a=>({...a,wLabel:w.label})));
+  const tA=allAssets.reduce((s,a)=>s+a.usd,0);
+  const tL=allLiab.reduce((s,a)=>s+a.usd,0);
+  const hfs=walletData.filter(w=>w.liabilities&&w.liabilities.length>0).map(w=>w.healthFactor);
+  return{walletData,allAssets,allLiab,tA,tL,net:tA-tL,hf:hfs.length?Math.min(...hfs):99};
 }
 
-// ── HELPERS ───────────────────────────────────────────────────
-function fmt(n){
-  if(!n||isNaN(n))return'$0.00';
-  const s=n<0?'-':'',a=Math.abs(n);
-  if(a>=1e6)return s+'$'+(a/1e6).toFixed(2)+'M';
-  if(a>=1e3)return s+'$'+a.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
-  return s+'$'+a.toFixed(2);
-}
+function fmt(n){if(!n||isNaN(n))return'$0.00';const s=n<0?'-':'',a=Math.abs(n);if(a>=1e6)return s+'$'+(a/1e6).toFixed(2)+'M';if(a>=1e3)return s+'$'+a.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});return s+'$'+a.toFixed(2);}
 function fmtN(n,d=4){return isNaN(n)?'0':n.toLocaleString('pt-BR',{minimumFractionDigits:0,maximumFractionDigits:d})}
 function hfColor(hf){return hf>=99?'var(--t3)':hf>=3?'var(--grn)':hf>=1.8?'var(--amb)':'var(--red)'}
-function hfBadge(hf){
-  if(hf>=99)return{t:'SEM DÍVIDA',c:'bdg'};
-  if(hf>=3) return{t:'SEGURO',c:'bdg'};
-  if(hf>=1.8)return{t:'MODERADO',c:'bda'};
-  return{t:'PERIGO',c:'bdr'};
-}
+function hfBadge(hf){if(hf>=99)return{t:'SEM DÍVIDA',c:'bdg'};if(hf>=3)return{t:'SEGURO',c:'bdg'};if(hf>=1.8)return{t:'MODERADO',c:'bda'};return{t:'PERIGO',c:'bdr'};}
 function ini(n){return(n||'?').split(' ').map(w=>w[0]).join('').toUpperCase().slice(0,2)}
-function chBd(id){
-  const c=CMETA[id];
-  if(!c)return`<span class="cb2 bdm">${id}</span>`;
-  return`<span class="cb2" style="color:${c.c};border-color:${c.c}33;background:${c.c}11"><span style="width:4px;height:4px;border-radius:50%;background:${c.c};display:inline-block"></span>${c.n}</span>`;
-}
-function srcTag(src){
-  if(src==='aave') return`<span class="src-tag src-aave">AAVE</span>`;
-  return`<span class="src-tag src-wallet">WALLET</span>`;
-}
-function tIcon(symbol,logo){
-  const col='#4f8ef7';
-  if(logo)return`<img src="${logo}" style="width:28px;height:28px;border-radius:50%;flex-shrink:0;object-fit:cover" onerror="this.outerHTML='<div class=ti style=background:${col}22;color:${col}>${symbol.slice(0,2)}</div>'">`;
-  return`<div class="ti" style="background:${col}22;color:${col};border:1px solid ${col}33">${symbol.slice(0,2)}</div>`;
-}
+function chBd(id){const c=CMETA[id];if(!c)return`<span class="cb2" style="border-color:var(--brd)">${id}</span>`;return`<span class="cb2" style="color:${c.c};border-color:${c.c}33;background:${c.c}11"><span style="width:4px;height:4px;border-radius:50%;background:${c.c};display:inline-block"></span>${c.n}</span>`;}
+function srcTag(s){return s==='aave'?'<span class="src-aave">AAVE</span>':'<span class="src-wallet">WALLET</span>'}
+function tIcon(sym,logo){const col='#4f8ef7';if(logo)return`<img src="${logo}" style="width:28px;height:28px;border-radius:50%;flex-shrink:0;object-fit:cover" onerror="this.outerHTML='<div class=ti style=background:${col}22;color:${col}>${sym.slice(0,2)}</div>'">`;return`<div class="ti" style="background:${col}22;color:${col};border:1px solid ${col}33">${sym.slice(0,2)}</div>`;}
 function fc(items,cf){return!items?[]:(cf==='all'?items:items.filter(a=>a.chain===cf))}
 function tsSince(t){const d=Date.now()-t;if(d<60000)return'agora';if(d<3600000)return~~(d/60000)+'min atrás';if(d<86400000)return~~(d/3600000)+'h atrás';return~~(d/86400000)+'d atrás'}
 
-// ── STATE ─────────────────────────────────────────────────────
 let S={cfg:lCfg(),active:'overview',cf:'all',port:{},load:{},err:{},globalLoad:false,showCfg:false,draft:null};
 
-// ── RENDER ROOT ───────────────────────────────────────────────
-function render(){
-  const app=document.getElementById('app');
-  if(!S.cfg){app.innerHTML=rSetup();bSetup();return;}
-  app.innerHTML=rMain();bMain();
-}
+function render(){const app=document.getElementById('app');if(!S.cfg){app.innerHTML=rSetup();bSetup();return;}app.innerHTML=rMain();bMain();}
 
-// ── SETUP ─────────────────────────────────────────────────────
-function defDraft(){
-  return{users:[
-    {name:'Diza',    wallets:[{label:'MetaMask ETH',address:''},{label:'Dívidas ETH',address:''},{label:'BTC Polygon',address:''},{label:'Hold Base',address:''}]},
-    {name:'Valeria', wallets:[{label:'Carteira Principal',address:''}]},
-    {name:'Camila',  wallets:[{label:'Carteira Principal',address:''}]},
-    {name:'Gabriel', wallets:[{label:'Carteira Principal',address:''}]},
-  ]};
-}
-function rSetup(){
-  S.draft=defDraft();
-  return`<div class="main" style="flex:1;overflow-y:auto"><div class="ss"><div class="ssb">
-    <div class="ssi">🔑</div>
-    <div class="sst">Configurar Carteiras</div>
-    <div class="sss">Cada pessoa pode ter <b style="color:var(--t1)">quantas carteiras quiser</b>.<br>
-    O dashboard busca tokens na carteira <b style="color:var(--t1)">E</b> posições no Aave automaticamente.</div>
-    ${rForm()}
-  </div></div></div>`;
-}
-function rForm(){
-  return`<div id="dform">
-    ${S.draft.users.map((u,ui)=>rPBlock(u,ui)).join('')}
-    <button class="apb" id="btn-ap">+ Adicionar Pessoa</button>
-    <div class="br">
-      <button class="btn btnd" id="btn-rst">Apagar Tudo</button>
-      ${S.cfg?`<button class="btn btng" id="btn-cancel">Cancelar</button>`:''}
-      <button class="btn btnp" id="btn-save">Salvar e Carregar ▶</button>
-    </div>
-  </div>`;
-}
-function rPBlock(u,ui){
-  const c=UCOLORS[ui%UCOLORS.length];
-  return`<div class="pb" data-pb="${ui}">
-    <div class="pbh">
-      <div class="av" style="width:32px;height:32px;background:${c.b};color:${c.c};border:2px solid ${c.c}44;font-size:11px;font-weight:800">${ini(u.name||'?')}</div>
-      <input class="pni" data-pi="${ui}" data-pf="name" value="${u.name||''}" placeholder="Nome">
-      ${S.draft.users.length>1?`<button class="rpb" data-rp="${ui}">×</button>`:''}
-    </div>
-    <div style="font-size:9px;color:var(--t3);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px">CARTEIRAS</div>
-    <div id="wlist-${ui}">${u.wallets.map((w,wi)=>rWE(ui,wi,w)).join('')}</div>
-    <button class="awb" data-aw="${ui}">+ Adicionar carteira</button>
-  </div>`;
-}
-function rWE(ui,wi,w){
-  return`<div class="we" data-we="${ui}-${wi}">
-    <input class="fi" data-pi="${ui}" data-wi="${wi}" data-wf="label" value="${w.label||''}" placeholder="Apelido">
-    <input class="fi" style="font-size:10px" data-pi="${ui}" data-wi="${wi}" data-wf="address" value="${w.address||''}" placeholder="0x...">
-    <button class="db" data-dw="${ui}-${wi}">×</button>
-  </div>`;
-}
+function defDraft(){return{users:[
+  {name:'Diza',wallets:[{label:'MetaMask ETH',address:''},{label:'Dívidas ETH',address:''},{label:'BTC Polygon',address:''},{label:'Hold Base',address:''}]},
+  {name:'Valeria',wallets:[{label:'Carteira Principal',address:''}]},
+  {name:'Camila',wallets:[{label:'Carteira Principal',address:''}]},
+  {name:'Gabriel',wallets:[{label:'Carteira Principal',address:''}]},
+]};}
+
+function rSetup(){S.draft=defDraft();return`<div class="main" style="flex:1;overflow-y:auto"><div class="ss"><div class="ssb"><div class="ssi">🔑</div><div class="sst">Configurar Carteiras</div><div class="sss">Cada pessoa pode ter <b style="color:var(--t1)">quantas carteiras quiser</b>.<br>O dashboard busca tokens na carteira <b style="color:var(--t1)">E</b> posições no Aave V3 via servidor Python.</div>${rForm()}</div></div></div>`;}
+function rForm(){return`<div id="dform">${S.draft.users.map((u,ui)=>rPBlock(u,ui)).join('')}<button class="apb" id="btn-ap">+ Adicionar Pessoa</button><div class="br"><button class="btn btnd" id="btn-rst">Apagar Tudo</button>${S.cfg?`<button class="btn btng" id="btn-cancel">Cancelar</button>`:''}<button class="btn btnp" id="btn-save">Salvar e Carregar ▶</button></div></div>`;}
+function rPBlock(u,ui){const c=UCOLORS[ui%UCOLORS.length];return`<div class="pb" data-pb="${ui}"><div class="pbh"><div class="av" style="width:32px;height:32px;background:${c.b};color:${c.c};border:2px solid ${c.c}44;font-size:11px;font-weight:800">${ini(u.name||'?')}</div><input class="pni" data-pi="${ui}" data-pf="name" value="${u.name||''}" placeholder="Nome">${S.draft.users.length>1?`<button class="rpb" data-rp="${ui}">×</button>`:''}</div><div style="font-size:9px;color:var(--t3);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px">CARTEIRAS</div><div id="wlist-${ui}">${u.wallets.map((w,wi)=>rWE(ui,wi,w)).join('')}</div><button class="awb" data-aw="${ui}">+ Adicionar carteira</button></div>`;}
+function rWE(ui,wi,w){return`<div class="we"><input class="fi" data-pi="${ui}" data-wi="${wi}" data-wf="label" value="${w.label||''}" placeholder="Apelido"><input class="fi" style="font-size:10px" data-pi="${ui}" data-wi="${wi}" data-wf="address" value="${w.address||''}" placeholder="0x..."><button class="db" data-dw="${ui}-${wi}">×</button></div>`;}
+
 function bSetup(){bForm();}
 function bForm(){
   document.getElementById('btn-ap')?.addEventListener('click',()=>{S.draft.users.push({name:'Nova Pessoa',wallets:[{label:'',address:''}]});refreshForm();});
   document.querySelectorAll('[data-rp]').forEach(b=>b.addEventListener('click',()=>{S.draft.users.splice(+b.dataset.rp,1);refreshForm();}));
   document.querySelectorAll('[data-aw]').forEach(b=>b.addEventListener('click',()=>{S.draft.users[+b.dataset.aw].wallets.push({label:'',address:''});refreshForm();}));
-  document.querySelectorAll('[data-dw]').forEach(b=>b.addEventListener('click',()=>{
-    const[ui,wi]=b.dataset.dw.split('-').map(Number);
-    if(S.draft.users[ui].wallets.length<=1)return;
-    S.draft.users[ui].wallets.splice(wi,1);refreshForm();
-  }));
-  document.querySelectorAll('[data-pi]').forEach(inp=>inp.addEventListener('input',()=>{
-    const ui=+inp.dataset.pi;
-    if(inp.dataset.pf==='name'){
-      S.draft.users[ui].name=inp.value;
-      const av=inp.closest('[data-pb]')?.querySelector('.av');
-      if(av)av.textContent=ini(inp.value||'?');
-    } else {
-      S.draft.users[ui].wallets[+inp.dataset.wi][inp.dataset.wf]=inp.value;
-    }
-  }));
+  document.querySelectorAll('[data-dw]').forEach(b=>b.addEventListener('click',()=>{const[ui,wi]=b.dataset.dw.split('-').map(Number);if(S.draft.users[ui].wallets.length<=1)return;S.draft.users[ui].wallets.splice(wi,1);refreshForm();}));
+  document.querySelectorAll('[data-pi]').forEach(inp=>inp.addEventListener('input',()=>{const ui=+inp.dataset.pi;if(inp.dataset.pf==='name'){S.draft.users[ui].name=inp.value;const av=inp.closest('[data-pb]')?.querySelector('.av');if(av)av.textContent=ini(inp.value||'?');}else{S.draft.users[ui].wallets[+inp.dataset.wi][inp.dataset.wf]=inp.value;}}));
   document.getElementById('btn-save')?.addEventListener('click',saveDraft);
   document.getElementById('btn-cancel')?.addEventListener('click',()=>{S.showCfg=false;render();});
-  document.getElementById('btn-rst')?.addEventListener('click',()=>{
-    if(!confirm('Apagar tudo?'))return;
-    localStorage.removeItem('dw5_cfg');localStorage.removeItem('dw5_cch');
-    S.cfg=null;S.port={};S.showCfg=false;render();
-  });
+  document.getElementById('btn-rst')?.addEventListener('click',()=>{if(!confirm('Apagar tudo?'))return;localStorage.removeItem('dw7_cfg');localStorage.removeItem('dw7_cch');S.cfg=null;S.port={};S.showCfg=false;render();});
 }
-function refreshForm(){
-  const el=document.getElementById('dform');
-  if(el){el.outerHTML=rForm();bForm();}
-}
+function refreshForm(){const el=document.getElementById('dform');if(el){el.outerHTML=rForm();bForm();}}
 function saveDraft(){
-  const users=S.draft.users.map(u=>({
-    name:(u.name||'').trim()||'Sem nome',
-    wallets:u.wallets.filter(w=>w.address.trim()).map(w=>({label:(w.label||'').trim()||'Carteira',address:w.address.trim()}))
-  })).filter(u=>u.wallets.length>0);
-  if(!users.length){alert('Adicione pelo menos uma pessoa com um endereço.');return;}
-  S.cfg={users};sCfg(S.cfg);S.port={};S.showCfg=false;S.active='overview';
-  render();fetchAll();
+  const users=S.draft.users.map(u=>({name:(u.name||'').trim()||'Sem nome',wallets:u.wallets.filter(w=>w.address.trim()).map(w=>({label:(w.label||'').trim()||'Carteira',address:w.address.trim()}))})).filter(u=>u.wallets.length>0);
+  if(!users.length){alert('Adicione pelo menos uma pessoa com endereço.');return;}
+  S.cfg={users};sCfg(S.cfg);S.port={};S.showCfg=false;S.active='overview';render();fetchAll();
 }
 
-// ── MAIN APP ──────────────────────────────────────────────────
 function rMain(){
-  const cch=lCch();
-  const age=cch.ts?tsSince(cch.ts):null;
-  const hasData=Object.keys(S.port).length>0;
-  return`
-  ${S.showCfg?rCfgOverlay():''}
+  const cch=lCch(),age=cch.ts?tsSince(cch.ts):null,hasData=Object.keys(S.port).length>0;
+  return`${S.showCfg?rCfgOverlay():''}
   <div class="sb">
-    <div class="logo"><div class="logo-t">DeFi Watch</div><div class="logo-s">Moralis + Aave API</div></div>
+    <div class="logo"><div class="logo-t">DeFi Watch</div><div class="logo-s">Python + Moralis + Aave</div></div>
     <div class="nav-sec">Menu</div>
     <div class="ni ${S.active==='overview'?'on':''}" data-nav="overview"><div class="dot"></div>Visão Geral</div>
     <div class="nav-sec">Carteiras</div>
-    ${S.cfg.users.map((u,i)=>{const c=UCOLORS[i%UCOLORS.length];return`
-      <div class="ni ${S.active===i?'on':''}" data-nav="${i}">
-        <div class="av" style="background:${c.b};color:${c.c};border:1px solid ${c.c}44">${ini(u.name)}</div>
-        <span style="flex:1">${u.name}</span>
-        <span style="font-size:9px;color:var(--t3)">${u.wallets.length}w${S.load[i]?' ⏳':''}</span>
-      </div>`;}).join('')}
+    ${S.cfg.users.map((u,i)=>{const c=UCOLORS[i%UCOLORS.length];return`<div class="ni ${S.active===i?'on':''}" data-nav="${i}"><div class="av" style="background:${c.b};color:${c.c};border:1px solid ${c.c}44">${ini(u.name)}</div><span style="flex:1">${u.name}</span><span style="font-size:9px;color:var(--t3)">${u.wallets.length}w${S.load[i]?' ⏳':''}</span></div>`;}).join('')}
     <div class="sb-foot">
       <div style="font-size:9px;color:var(--t3);letter-spacing:1px;margin-bottom:6px;text-transform:uppercase">Status</div>
-      <div style="font-size:10px;color:var(--t2);margin-bottom:8px">
-        <span class="sdot ${hasData?'slive':'sidle'}"></span>${age?'Atualizado '+age:'Sem dados'}
-      </div>
+      <div style="font-size:10px;color:var(--t2);margin-bottom:8px"><span class="sdot ${hasData?'slive':'sidle'}"></span>${age?'Atualizado '+age:'Sem dados'}</div>
       <div style="display:flex;gap:6px">
         <button class="ibtn" id="btn-ref" ${S.globalLoad?'disabled':''}>↻ Atualizar</button>
         <button class="ibtn" id="btn-cfg">⚙ Config</button>
@@ -612,21 +248,15 @@ function rMain(){
   <div class="main">
     <div class="tb">
       <div class="tb-title">${S.active==='overview'?'Visão Geral':(S.cfg.users[S.active]?.name||'')}</div>
-      <div class="tb-right">
-        ${CFILTERS.map(c=>`<button class="cbtn ${S.cf===c.id?'on':''}" data-chain="${c.id}">
-          ${c.id!=='all'?`<span class="cdot" style="background:${CMETA[c.id]?.c}"></span>`:''}${c.l}
-        </button>`).join('')}
-      </div>
+      <div class="tb-right">${CFILTERS.map(c=>`<button class="cbtn ${S.cf===c.id?'on':''}" data-chain="${c.id}">${c.id!=='all'?`<span class="cdot" style="background:${CMETA[c.id]?.c}"></span>`:''}${c.l}</button>`).join('')}</div>
     </div>
-    <div class="content" id="mc">${S.active==='overview'?rOverview():rUserDash(S.active)}</div>
+    <div class="content">${S.active==='overview'?rOverview():rUserDash(S.active)}</div>
   </div>`;
 }
 
-// ── OVERVIEW ──────────────────────────────────────────────────
 function rOverview(){
-  const hasAny=Object.keys(S.port).length>0;
-  const anyLoad=Object.values(S.load).some(Boolean);
-  if(!hasAny&&anyLoad)return`<div class="lw"><div class="ls"></div><div class="lt">Buscando tokens + posições Aave...<br>Pode demorar ~30-60s na primeira vez.</div></div>`;
+  const hasAny=Object.keys(S.port).length>0,anyLoad=Object.values(S.load).some(Boolean);
+  if(!hasAny&&anyLoad)return`<div class="lw"><div class="ls"></div><div class="lt">Servidor Python buscando dados...<br>Tokens + Aave V3 em todas as redes</div></div>`;
   if(!hasAny)return`<div class="ib">Clique em <b>↻ Atualizar</b> para carregar todas as carteiras.</div>`;
   let tA=0,tL=0;
   S.cfg.users.forEach((_,i)=>{const p=S.port[i];if(!p)return;tA+=fc(p.allAssets,S.cf).reduce((s,a)=>s+a.usd,0);tL+=fc(p.allLiab,S.cf).reduce((s,a)=>s+a.usd,0);});
@@ -634,112 +264,63 @@ function rOverview(){
   S.cfg.users.forEach((u,i)=>{const p=S.port[i];if(!p)return;fc(p.allAssets,S.cf).forEach(a=>allTop.push({...a,owner:u.name,oi:i}));});
   allTop.sort((a,b)=>b.usd-a.usd);
   return`
-  <div class="nwb">
-    <div class="nwm">
-      <div class="nwl">Patrimônio Total</div>
-      <div class="nwv">${fmt(tA-tL)}</div>
-      <div class="nws">${S.cfg.users.length} pessoas · ${S.cfg.users.reduce((s,u)=>s+u.wallets.length,0)} carteiras</div>
-    </div>
-    <div class="nwsp">
-      <div><div class="nwsl">Assets + Aave Supplies</div><div class="nwsv cg">${fmt(tA)}</div></div>
-      <div><div class="nwsl">Dívidas Aave</div><div class="nwsv cr">${fmt(tL)}</div></div>
-    </div>
-  </div>
+  <div class="nwb"><div class="nwm"><div class="nwl">Patrimônio Total</div><div class="nwv">${fmt(tA-tL)}</div><div class="nws">${S.cfg.users.length} pessoas · ${S.cfg.users.reduce((s,u)=>s+u.wallets.length,0)} carteiras</div></div><div class="nwsp"><div><div class="nwsl">Assets + Supplies</div><div class="nwsv cg">${fmt(tA)}</div></div><div><div class="nwsl">Dívidas Aave</div><div class="nwsv cr">${fmt(tL)}</div></div></div></div>
   <div class="sh"><div class="st">Pessoas</div><div class="sl"></div></div>
-  <div class="g2">
-    ${S.cfg.users.map((u,i)=>{
-      const p=S.port[i],c=UCOLORS[i%UCOLORS.length],ld=S.load[i],er=S.err[i];
-      const fA=p?fc(p.allAssets,S.cf):[];const fL=p?fc(p.allLiab,S.cf):[];
-      const tA2=fA.reduce((s,a)=>s+a.usd,0),tL2=fL.reduce((s,a)=>s+a.usd,0);
-      const hf=p?.hf||0;
-      const chains=[...new Set((p?.allAssets||[]).map(a=>a.chain))];
-      return`<div class="pc" data-nav="${i}">
-        <div class="pct">
-          <div class="pav" style="background:${c.b};color:${c.c};border:2px solid ${c.c}44">${ini(u.name)}</div>
-          <div>
-            <div class="pnb">${u.name}</div>
-            <div class="pwp">${u.wallets.length} carteira${u.wallets.length>1?'s':''}: ${u.wallets.map(w=>w.label).join(', ')}</div>
-          </div>
-        </div>
-        ${ld?'<div class="lw" style="padding:12px"><div class="ls"></div></div>':
-          er?`<div class="eb" style="margin:0">⚠ ${er}</div>`:
-          !p?'<div style="text-align:center;padding:12px;font-size:11px;color:var(--t3)">Clique em Atualizar</div>':`
-        <div class="psg">
-          <div class="pi"><div class="pil">Net Worth</div><div class="piv cb">${fmt(tA2-tL2)}</div></div>
-          <div class="pi"><div class="pil">Health Factor</div><div class="piv" style="color:${hfColor(hf)}">${hf>=99?'—':hf.toFixed(2)}</div></div>
-          <div class="pi"><div class="pil">Assets</div><div class="piv cg">${fmt(tA2)}</div></div>
-          <div class="pi"><div class="pil">Dívidas</div><div class="piv cr">${fmt(tL2)}</div></div>
-        </div>
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:10px">${chains.slice(0,5).map(ch=>chBd(ch)).join('')}</div>`}
-        <div class="par">→</div>
-      </div>`;
-    }).join('')}
-  </div>
-  ${allTop.length?`
-  <div class="sh"><div class="st">Top Assets</div><div class="sl"></div><div class="se">${fmt(tA)}</div></div>
-  <div class="tw"><table>
-    <thead><tr><th>Token</th><th>Origem</th><th>Dono</th><th>Carteira</th><th>Rede</th><th class="tr">USD</th></tr></thead>
-    <tbody>${allTop.slice(0,15).map(a=>{const c=UCOLORS[a.oi%UCOLORS.length];return`<tr>
-      <td><div class="tc">${tIcon(a.symbol,a.logo)}<div><div class="tn">${a.symbol}</div><div class="ts2">${a.name}</div></div></div></td>
-      <td>${srcTag(a.source)}</td>
-      <td><span style="color:${c.c};font-size:11px;font-weight:600">${a.owner}</span></td>
-      <td><span style="font-size:10px;color:var(--t3)">${a.wLabel||''}</span></td>
-      <td>${chBd(a.chain)}</td>
-      <td class="tr cg" style="font-family:monospace">${fmt(a.usd)}</td>
-    </tr>`}).join('')}</tbody>
-  </table></div>`:''}`;
+  <div class="g2">${S.cfg.users.map((u,i)=>{
+    const p=S.port[i],c=UCOLORS[i%UCOLORS.length],ld=S.load[i],er=S.err[i];
+    const fA=p?fc(p.allAssets,S.cf):[];const fL=p?fc(p.allLiab,S.cf):[];
+    const tA2=fA.reduce((s,a)=>s+a.usd,0),tL2=fL.reduce((s,a)=>s+a.usd,0);
+    const hf=p?.hf||0;const chains=[...new Set((p?.allAssets||[]).map(a=>a.chain))];
+    return`<div class="pc" data-nav="${i}"><div class="pct"><div class="pav" style="background:${c.b};color:${c.c};border:2px solid ${c.c}44">${ini(u.name)}</div><div><div class="pnb">${u.name}</div><div class="pwp">${u.wallets.length} carteira${u.wallets.length>1?'s':''}: ${u.wallets.map(w=>w.label).join(', ')}</div></div></div>
+    ${ld?'<div class="lw" style="padding:12px"><div class="ls"></div></div>':er?`<div class="eb" style="margin:0">⚠ ${er}</div>`:!p?'<div style="text-align:center;padding:12px;font-size:11px;color:var(--t3)">Clique em Atualizar</div>':`
+    <div class="psg">
+      <div class="pi"><div class="pil">Net Worth</div><div class="piv cb">${fmt(tA2-tL2)}</div></div>
+      <div class="pi"><div class="pil">Health Factor</div><div class="piv" style="color:${hfColor(hf)}">${hf>=99?'—':hf.toFixed(2)}</div></div>
+      <div class="pi"><div class="pil">Assets</div><div class="piv cg">${fmt(tA2)}</div></div>
+      <div class="pi"><div class="pil">Dívidas</div><div class="piv cr">${fmt(tL2)}</div></div>
+    </div>
+    <div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:10px">${chains.slice(0,5).map(ch=>chBd(ch)).join('')}</div>`}
+    <div class="par">→</div></div>`;
+  }).join('')}</div>
+  ${allTop.length?`<div class="sh"><div class="st">Top Assets</div><div class="sl"></div><div class="se">${fmt(tA)}</div></div>
+  <div class="tw"><table><thead><tr><th>Token</th><th>Origem</th><th>Dono</th><th>Carteira</th><th>Rede</th><th class="tr">USD</th></tr></thead>
+  <tbody>${allTop.slice(0,15).map(a=>{const c=UCOLORS[a.oi%UCOLORS.length];return`<tr>
+    <td><div class="tc">${tIcon(a.symbol,a.logo)}<div><div class="tn">${a.symbol}</div><div class="ts2">${a.name}</div></div></div></td>
+    <td>${srcTag(a.source)}</td><td><span style="color:${c.c};font-size:11px;font-weight:600">${a.owner}</span></td>
+    <td><span style="font-size:10px;color:var(--t3)">${a.wLabel||''}</span></td>
+    <td>${chBd(a.chain)}</td><td class="tr cg" style="font-family:monospace">${fmt(a.usd)}</td>
+  </tr>`;}).join('')}</tbody></table></div>`:''}`;
 }
 
-// ── USER DASH ────────────────────────────────────────────────
 function rUserDash(idx){
   const u=S.cfg.users[idx],c=UCOLORS[idx%UCOLORS.length];
   const p=S.port[idx],ld=S.load[idx],er=S.err[idx];
-  if(ld)return`<div class="lw"><div class="ls"></div><div class="lt">Carregando ${u.name}...<br>Buscando tokens + Aave em todas as redes<br>~30-60 segundos na primeira vez</div></div>`;
+  if(ld)return`<div class="lw"><div class="ls"></div><div class="lt">Servidor Python carregando ${u.name}...<br>Tokens + Aave V3 em todas as redes</div></div>`;
   if(er)return`<div class="eb">⚠ ${er}</div><button class="ibtn" style="margin-top:8px" onclick="doFetchUser(${idx})">↻ Tentar novamente</button>`;
   if(!p)return`<div class="ib">Clique em ↻ Atualizar para carregar ${u.name}.</div>`;
-
   const fA=fc(p.allAssets,S.cf),fL=fc(p.allLiab,S.cf);
   const tA=fA.reduce((s,a)=>s+a.usd,0),tL=fL.reduce((s,a)=>s+a.usd,0);
   const hf=p.hf,hfbv=hfBadge(hf),hfPct=hf>=99?100:Math.min(100,(hf/5)*100);
   const chains=[...new Set(p.allAssets.map(a=>a.chain))];
-  const hasAave = p.allAssets.some(a=>a.source==='aave') || p.allLiab.some(a=>a.source==='aave');
-
   return`
   <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
     <div class="pav" style="width:46px;height:46px;background:${c.b};color:${c.c};border:2px solid ${c.c}55;font-size:16px;font-weight:800">${ini(u.name)}</div>
-    <div>
-      <div style="font-size:20px;font-weight:800">${u.name}</div>
-      <div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:4px">${chains.map(ch=>chBd(ch)).join('')}${hasAave?'<span class="src-tag src-aave" style="margin-left:4px">AAVE V3</span>':''}</div>
-    </div>
+    <div><div style="font-size:20px;font-weight:800">${u.name}</div><div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:4px">${chains.map(ch=>chBd(ch)).join('')}</div></div>
     <div style="margin-left:auto;font-size:10px;color:var(--t3)">${u.wallets.length} carteira${u.wallets.length>1?'s':''}</div>
   </div>
-
   <div class="g3">
     <div class="sc"><div class="slabel">Net Worth</div><div class="sval cb">${fmt(tA-tL)}</div><div class="ssub">após dívidas</div></div>
     <div class="sc"><div class="slabel">Assets + Supplies</div><div class="sval cg">${fmt(tA)}</div><div class="ssub">${fA.length} posições</div></div>
     <div class="sc"><div class="slabel">Dívidas Aave</div><div class="sval cr">${fmt(tL)}</div><div class="ssub">${fL.length} empréstimos</div></div>
   </div>
-
-  ${tL>0?`<div class="hfc">
-    <div class="hft">
-      <div><div class="hflb">Health Factor (Aave V3)</div><div class="hfn" style="color:${hfColor(hf)}">${hf>=99?'∞':hf.toFixed(2)}</div></div>
-      <span class="bd ${hfbv.c}">${hfbv.t}</span>
-    </div>
-    <div class="hftr"><div class="hff" style="width:${hfPct}%"></div></div>
-    <div class="hftk"><span>0</span><span>1.0 — Liquidação</span><span>1.5 — Risco</span><span>2.0</span><span>5.0+</span></div>
-  </div>`:''}
-
+  ${tL>0?`<div class="hfc"><div class="hft"><div><div class="hflb">Health Factor (Aave V3)</div><div class="hfn" style="color:${hfColor(hf)}">${hf>=99?'∞':hf.toFixed(2)}</div></div><span class="bd ${hfbv.c}">${hfbv.t}</span></div><div class="hftr"><div class="hff" style="width:${hfPct}%"></div></div><div class="hftk"><span>0</span><span>1.0 Liquidação</span><span>1.5 Risco</span><span>2.0</span><span>5.0+</span></div></div>`:''}
   <div class="sh"><div class="st">Carteiras Individuais</div><div class="sl"></div><div class="se">${u.wallets.length} endereços</div></div>
   ${p.walletData.map(wd=>{
-    const wdA=fc(wd.assets,S.cf),wdL=fc(wd.liabilities,S.cf);
+    const wdA=fc(wd.assets||[],S.cf),wdL=fc(wd.liabilities||[],S.cf);
     const wA=wdA.reduce((s,a)=>s+a.usd,0),wL=wdL.reduce((s,a)=>s+a.usd,0);
-    const wChains=[...new Set(wd.assets.map(a=>a.chain))];
-    const wAave=wd.assets.some(a=>a.source==='aave');
+    const wChains=[...new Set((wd.assets||[]).map(a=>a.chain))];
     return`<div class="wc">
-      <div class="wch">
-        <div style="flex:1"><div class="wcn">${wd.label}${wAave?' <span class="src-tag src-aave">AAVE</span>':''}</div><div class="wca">${wd.address}</div></div>
-        <div style="display:flex;gap:4px;flex-wrap:wrap">${wChains.map(ch=>chBd(ch)).join('')}</div>
-      </div>
+      <div class="wch"><div style="flex:1"><div class="wcn">${wd.label}</div><div class="wca">${wd.address}</div></div><div style="display:flex;gap:4px;flex-wrap:wrap">${wChains.map(ch=>chBd(ch)).join('')}</div></div>
       ${wd.error?`<div class="eb" style="margin:12px">⚠ ${wd.error}</div>`:`
       <div class="wcs">
         <div class="wci"><div class="wcil">Assets+Supplies</div><div class="wciv cg">${fmt(wA)}</div></div>
@@ -747,116 +328,51 @@ function rUserDash(idx){
         <div class="wci"><div class="wcil">Net Worth</div><div class="wciv cb">${fmt(wA-wL)}</div></div>
         <div class="wci"><div class="wcil">Posições</div><div class="wciv cm">${wdA.length}</div></div>
       </div>
-      ${wdA.length>0?`<table>
-        <thead><tr><th>Token</th><th>Origem</th><th>Rede</th><th class="tr">Saldo</th><th class="tr">USD</th>${wdA.some(a=>a.apy>0)?'<th class="tr">APY</th>':''}</tr></thead>
-        <tbody>${wdA.map(a=>`<tr>
-          <td><div class="tc">${tIcon(a.symbol,a.logo)}<div><div class="tn">${a.symbol}</div><div class="ts2">${a.name}</div></div></div></td>
-          <td>${srcTag(a.source)}</td>
-          <td>${chBd(a.chain)}</td>
-          <td class="tr" style="font-family:monospace">${fmtN(a.balance)}</td>
-          <td class="tr cg" style="font-family:monospace">${fmt(a.usd)}</td>
-          ${wdA.some(x=>x.apy>0)?`<td class="tr cg" style="font-family:monospace">${a.apy>0?a.apy.toFixed(2)+'%':'—'}</td>`:''}
-        </tr>`).join('')}</tbody>
-      </table>`:
-      `<div style="padding:16px;text-align:center;font-size:11px;color:var(--t3)">Nenhum token nesta seleção</div>`}
-      ${wdL.length>0?`
-      <div style="border-top:1px solid var(--brd)">
+      ${wdA.length>0?`<table><thead><tr><th>Token</th><th>Origem</th><th>Rede</th><th class="tr">Saldo</th><th class="tr">USD</th></tr></thead>
+      <tbody>${wdA.map(a=>`<tr>
+        <td><div class="tc">${tIcon(a.symbol,a.logo)}<div><div class="tn">${a.symbol}</div><div class="ts2">${a.name}</div></div></div></td>
+        <td>${srcTag(a.source)}</td><td>${chBd(a.chain)}</td>
+        <td class="tr" style="font-family:monospace">${fmtN(a.balance)}</td>
+        <td class="tr cg" style="font-family:monospace">${fmt(a.usd)}</td>
+      </tr>`).join('')}</tbody></table>`:`<div style="padding:16px;text-align:center;font-size:11px;color:var(--t3)">Nenhum token nesta seleção</div>`}
+      ${wdL.length>0?`<div style="border-top:1px solid var(--brd)">
         <div style="padding:8px 14px;font-size:9px;color:var(--red);letter-spacing:2px;text-transform:uppercase;background:var(--redd)">🔴 Dívidas Aave V3</div>
-        <table>
-          <thead><tr><th>Token</th><th>Protocolo</th><th>Rede</th><th class="tr">Saldo</th><th class="tr">USD</th><th class="tr">APY</th></tr></thead>
-          <tbody>${wdL.map(a=>`<tr>
-            <td><div class="tc">${tIcon(a.symbol,a.logo)}<div><div class="tn">${a.symbol}</div></div></div></td>
-            <td><span class="src-tag src-aave">${a.protocol||'AAVE'}</span></td>
-            <td>${chBd(a.chain)}</td>
-            <td class="tr" style="font-family:monospace">${fmtN(a.balance)}</td>
-            <td class="tr cr" style="font-family:monospace">${fmt(a.usd)}</td>
-            <td class="tr ca" style="font-family:monospace">${a.apy>0?a.apy.toFixed(2)+'%':'—'}</td>
-          </tr>`).join('')}</tbody>
-        </table>
-      </div>`:''}
+        <table><thead><tr><th>Token</th><th>Protocolo</th><th>Rede</th><th class="tr">Saldo</th><th class="tr">USD</th><th class="tr">APY</th></tr></thead>
+        <tbody>${wdL.map(a=>`<tr>
+          <td><div class="tc">${tIcon(a.symbol,a.logo)}<div><div class="tn">${a.symbol}</div></div></div></td>
+          <td><span class="src-aave">${a.protocol||'AAVE'}</span></td><td>${chBd(a.chain)}</td>
+          <td class="tr" style="font-family:monospace">${fmtN(a.balance)}</td>
+          <td class="tr cr" style="font-family:monospace">${fmt(a.usd)}</td>
+          <td class="tr ca" style="font-family:monospace">${a.apy>0?a.apy.toFixed(2)+'%':'—'}</td>
+        </tr>`).join('')}</tbody></table></div>`:''}
       `}
     </div>`;
-  }).join('')}
-
-  ${fA.length>0?`
-  <div class="sh" style="margin-top:8px"><div class="st">Todos os Assets</div><div class="sl"></div><div class="se">${fmt(tA)}</div></div>
-  <div class="tw"><table>
-    <thead><tr><th>Token</th><th>Origem</th><th>Carteira</th><th>Rede</th><th class="tr">Saldo</th><th class="tr">USD</th></tr></thead>
-    <tbody>${fA.map(a=>`<tr>
-      <td><div class="tc">${tIcon(a.symbol,a.logo)}<div><div class="tn">${a.symbol}</div><div class="ts2">${a.name}</div></div></div></td>
-      <td>${srcTag(a.source)}</td>
-      <td><span style="font-size:10px;color:var(--t3)">${a.wLabel||''}</span></td>
-      <td>${chBd(a.chain)}</td>
-      <td class="tr" style="font-family:monospace">${fmtN(a.balance)}</td>
-      <td class="tr cg" style="font-family:monospace">${fmt(a.usd)}</td>
-    </tr>`).join('')}</tbody>
-  </table></div>`:''}
-
-  ${fL.length>0?`
-  <div class="sh"><div class="st">Todas as Dívidas</div><div class="sl"></div><div class="se cr">${fmt(tL)}</div></div>
-  <div class="tw"><table>
-    <thead><tr><th>Token</th><th>Carteira</th><th>Protocolo</th><th>Rede</th><th class="tr">USD</th><th class="tr">APY</th></tr></thead>
-    <tbody>${fL.map(a=>`<tr>
-      <td><div class="tc">${tIcon(a.symbol,a.logo)}<div><div class="tn">${a.symbol}</div></div></div></td>
-      <td><span style="font-size:10px;color:var(--t3)">${a.wLabel||''}</span></td>
-      <td><span class="src-tag src-aave">${a.protocol||'AAVE'}</span></td>
-      <td>${chBd(a.chain)}</td>
-      <td class="tr cr" style="font-family:monospace">${fmt(a.usd)}</td>
-      <td class="tr ca" style="font-family:monospace">${a.apy>0?a.apy.toFixed(2)+'%':'—'}</td>
-    </tr>`).join('')}</tbody>
-  </table></div>`:''}`;
+  }).join('')}`;
 }
 
-// ── CONFIG OVERLAY ────────────────────────────────────────────
-function rCfgOverlay(){
-  S.draft=JSON.parse(JSON.stringify(S.cfg));
-  return`<div class="ov" id="cfg-ov">
-    <div class="ob">
-      <div class="ot">⚙ Configurações</div>
-      <div class="os">Edite pessoas e carteiras.</div>
-      ${rForm()}
-    </div>
-  </div>`;
-}
-
-// ── BIND MAIN ─────────────────────────────────────────────────
+function rCfgOverlay(){S.draft=JSON.parse(JSON.stringify(S.cfg));return`<div class="ov" id="cfg-ov"><div class="ob"><div class="ot">⚙ Configurações</div><div class="os">Edite pessoas e carteiras.</div>${rForm()}</div></div>`;}
 function bMain(){
-  document.querySelectorAll('[data-nav]').forEach(el=>{
-    el.addEventListener('click',()=>{const v=el.dataset.nav;S.active=v==='overview'?'overview':+v;render();});
-  });
-  document.querySelectorAll('[data-chain]').forEach(el=>{
-    el.addEventListener('click',()=>{S.cf=el.dataset.chain;render();});
-  });
+  document.querySelectorAll('[data-nav]').forEach(el=>el.addEventListener('click',()=>{const v=el.dataset.nav;S.active=v==='overview'?'overview':+v;render();}));
+  document.querySelectorAll('[data-chain]').forEach(el=>el.addEventListener('click',()=>{S.cf=el.dataset.chain;render();}));
   document.getElementById('btn-ref')?.addEventListener('click',fetchAll);
   document.getElementById('btn-cfg')?.addEventListener('click',()=>{S.showCfg=true;render();});
-  if(S.showCfg){
-    document.getElementById('cfg-ov')?.addEventListener('click',e=>{if(e.target.id==='cfg-ov'){S.showCfg=false;render();}});
-    bForm();
-  }
+  if(S.showCfg){document.getElementById('cfg-ov')?.addEventListener('click',e=>{if(e.target.id==='cfg-ov'){S.showCfg=false;render();}});bForm();}
 }
-
-// ── FETCH ─────────────────────────────────────────────────────
 async function doFetchUser(idx){
-  const u=S.cfg.users[idx];
-  if(!u.wallets.length)return;
+  const u=S.cfg.users[idx];if(!u.wallets.length)return;
   S.load[idx]=true;S.err[idx]=null;render();
-  try{ S.port[idx]=await fetchUserFull(u); }
-  catch(e){ S.err[idx]=e.message||'Erro de conexão'; }
+  try{S.port[idx]=await fetchUserFull(u);}catch(e){S.err[idx]=e.message||'Erro';}
   S.load[idx]=false;render();
 }
 async function fetchAll(){
-  if(S.globalLoad)return;
-  S.globalLoad=true;render();
+  if(S.globalLoad)return;S.globalLoad=true;render();
   await Promise.allSettled(S.cfg.users.map((_,i)=>doFetchUser(i)));
   S.globalLoad=false;sCch(S.port);render();
 }
-
-// ── BOOT ──────────────────────────────────────────────────────
 (function(){
   const cch=lCch();
   if(cch.data&&(Date.now()-cch.ts)<10*60*1000)S.port=cch.data;
-  render();
-  if(S.cfg)fetchAll();
+  render();if(S.cfg)fetchAll();
 })();
 </script>
 </body>
