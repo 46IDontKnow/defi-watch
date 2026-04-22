@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/api/portfolio", "destination": "/api/portfolio.py" }
+  ]
+}
